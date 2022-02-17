@@ -1,9 +1,7 @@
-@import  '//codepen.io/chrisdothtml/pen/ojLzJK.css';
-
 body{
     margin:0px;
 }
-#title-screen{
+.title-screen{
     background-image:url("background-lion.jpg");
     width:100%;
     height:375px;
@@ -21,21 +19,34 @@ body{
    font-size:145px;
  }
 
- #navigation{
+ .navigation{
     background-color: rgba(0, 0, 0, 0.788);
+    padding-left: 20px;
     color:white;
  }
- #navigation a{
-    padding: 2px 5px 2px 5px;
+
+ .navigation .nav__item-link{
+    padding: 2px 5px 5px 2px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     display:inline-block;
+    
  }
 
- #nav__item{
+ .navigation .nav__item-link:hover{
+   padding: 2px 5px 2px 2px;
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+   display:inline-block;
+   border-bottom: 1px solid white;
+}
+
+ .nav__item{
      padding:5px 10px;
      margin:5px;
      display:inline-block;
+     text-align: right;
+     width:90%;
  }
 
  .main-header > div{
@@ -48,6 +59,26 @@ body{
     font-weight: bold;
     display:inline-block;
  }
+
+ .nav__items-cta{
+    font-family: 'Lato', sans-serif;
+    color:black;
+    padding:7px 7px 9px 7px;
+    margin: 2px 2px 2px 2px;
+    background-color: rgb(240, 240, 240);
+    font-weight: bold;
+    border-radius:5px;
+ }
+
+ .nav__items-cta:hover{
+   font-family: 'Lato', sans-serif;
+   color:white;
+   padding:7px 7px 9px 7px;
+   margin: 2px 2px 2px 2px;
+   background-color: rgb(0, 0, 0);
+   font-weight: bold;
+   border-radius:5px;
+}
 
  .title{
     text-align: center;
@@ -90,30 +121,42 @@ body{
    font-family:'Lato', sans-serif;
 }
 
-#footer-nav a{
-   padding: 2px 5px 2px 5px;
-   font-family: 'Lato', sans-serif;
-   font-weight: bold;
-   display:inline-block;
-}
-
-#footer-nav{
-   background-color: rgb(0, 0, 0);
+.nav__footer{
+   background-color: black;
    color:white;
-   
+   padding: 5px 5px 5px 5px;
 }
 
-/*.fa {
+.nav__footer-item{
+   text-align: center;
+}
+
+.fa {
    padding: 20px;
-   font-size: 30px;
+   font-size:30px;
    width: 50px;
    text-align: center;
    text-decoration: none;
+   display:inline-block;
+ }
+ 
+ /* Add a hover effect if you want */
+ .fa:hover {
+   opacity: 0.7;
+ }
+ 
+ /* Set a specific color for each brand */
+ 
+ /* Facebook */
+ .fa-facebook {
+   background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+   color: white;
+   border-radius:3px;
  }
 
- .fa-facebook {
-   background: #3B5998;
+.fa-instagram {
+   background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%);
    color: white;
- }*/
+   border-radius:3px;
+}
 
- 
